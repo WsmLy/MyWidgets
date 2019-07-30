@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.ArcProgressActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp390"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:background="#ff0000ff">
+    <teotw.com.mywidgets.widgets.ArcProgressCircle
+        android:id="@+id/apc_aqi"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp250"
+        android:progress="0"
+        android:background="@color/colorAccent"
+        android:visibility="invisible"
+        app:center_content_color="@android:color/white"
+        app:center_content_size="54sp"
+        app:center_desc="中国发布值"
+        app:center_desc_color="#88FFFFFF"
+        app:center_desc_size="14sp"
+        app:center_unit=""
+        app:center_unit_size="18sp"
+        app:inside_circle_markline="5dp"
+        app:outside_circle_markline_radius="125dp"
+        app:outside_circle_radius="110dp"
+        app:outside_mark_color="#66FFFFFF"
+        app:outside_mark_size="14sp"
+        app:progress_circle_color="#55FFFFFF"
+        app:progress_circle_radius="110dp"
+        app:progress_circle_width="15dp"
+        app:progress_color="#55FFFFFF"/>
+</RelativeLayout>
+</RelativeLayout>

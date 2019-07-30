@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import teotw.com.mywidgets.activities.ArcProgressActivity;
 import teotw.com.mywidgets.activities.CreateViewInSubThreadActivity;
 import teotw.com.mywidgets.activities.UpDownTextViewActivity;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.up_down_textview).setOnClickListener(this);//自动向上滚动的控件
         findViewById(R.id.create_view_insubthread).setOnClickListener(this);//在子线程创建view
+        findViewById(R.id.arc_progress).setOnClickListener(this);//表盘进度条
     }
 
     @Override
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.create_view_insubthread://子线程创建view
                 startActivity(new Intent(MainActivity.this, CreateViewInSubThreadActivity.class));
+                break;
+            case R.id.arc_progress://表盘进度条
+                startActivity(new Intent(MainActivity.this, ArcProgressActivity.class));
                 break;
         }
     }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="acrprogress_circle">
+        <attr name="outside_circle_radius" format="dimension"/>
+        <attr name="outside_circle_markline_radius" format="dimension"/>
+        <attr name="progress_circle_radius" format="dimension"/>
+        <attr name="progress_circle_width" format="dimension"/>
+        <attr name="inside_circle_radius" format="dimension"/>
+        <attr name="inside_circle_markline" format="dimension"/>
+        <attr name="center_content_progress" format="integer"/>
+        <attr name="progress_circle_distance_angle" format="integer"/>
+        <attr name="center_unit" format="string"/>
+        <attr name="center_desc" format="string"/>
+        <attr name="center_content_size" format="dimension"/>
+        <attr name="center_unit_size" format="dimension"/>
+        <attr name="center_desc_size" format="dimension"/>
+        <attr name="outside_mark_size" format="dimension"/>
+        <attr name="center_content_color" format="color"/>
+        <attr name="center_unit_color" format="color"/>
+        <attr name="center_desc_color" format="color"/>
+        <attr name="outside_mark_color" format="color"/>
+        <attr name="progress_circle_color" format="color"/>
+        <attr name="progress_color" format="color"/>
+    </declare-styleable>
+</resources>

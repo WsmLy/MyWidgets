@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MyWidgets</string>
     <string name="create_view_in_sub_thread">子线程创建view</string>
+    <string name="aqc_progress">表盘进度条</string>
 </resources>
