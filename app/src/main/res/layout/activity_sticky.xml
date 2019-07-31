@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StickyActivity">
+
+    <teotw.com.mywidgets.widgets.StickyLayout
+        android:id="@+id/sticky"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/v_touch_bounce"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#c0ffff00"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="4000dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/sticky"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sticky_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/header_sticky"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sticky_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sticky_header"
+                android:fillViewport="true"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/rvp_morefunction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F2F2F2"
+                    android:overScrollMode="never"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </teotw.com.mywidgets.widgets.StickyLayout>
+
+</android.support.constraint.ConstraintLayout>

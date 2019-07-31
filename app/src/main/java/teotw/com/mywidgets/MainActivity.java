@@ -7,6 +7,7 @@ import android.view.View;
 
 import teotw.com.mywidgets.activities.ArcProgressActivity;
 import teotw.com.mywidgets.activities.CreateViewInSubThreadActivity;
+import teotw.com.mywidgets.activities.StickyActivity;
 import teotw.com.mywidgets.activities.UpDownTextViewActivity;
 
 /**
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.up_down_textview).setOnClickListener(this);//自动向上滚动的控件
         findViewById(R.id.create_view_insubthread).setOnClickListener(this);//在子线程创建view
         findViewById(R.id.arc_progress).setOnClickListener(this);//表盘进度条
+        findViewById(R.id.sticky).setOnClickListener(this);//sticky
     }
 
     @Override
@@ -36,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.arc_progress://表盘进度条
                 startActivity(new Intent(MainActivity.this, ArcProgressActivity.class));
+                break;
+            case R.id.sticky://sticky
+                startActivity(new Intent(MainActivity.this, StickyActivity.class));
                 break;
         }
     }

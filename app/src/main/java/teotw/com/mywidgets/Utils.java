@@ -1,6 +1,7 @@
 package teotw.com.mywidgets;
 
 import android.content.Context;
+import android.content.ContextWrapper;
 import android.util.TypedValue;
 
 /**
@@ -14,6 +15,7 @@ import android.util.TypedValue;
  */
 
 public class Utils {
+    private static Context context;
     /**
      * dp转换成px
      */
@@ -33,5 +35,13 @@ public class Utils {
     public static int sp2px(Context context, float spValue) {
         float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
         return (int) (spValue * fontScale + 0.5f);
+    }
+
+    public static Context getContext() {
+        return context;
+    }
+
+    public static void setContext(Context c) {
+        context = c;
     }
 }

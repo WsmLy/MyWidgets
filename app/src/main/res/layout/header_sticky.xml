@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_home_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="#ff00ff00"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--android:background="@color/main_blue_new1"-->
+
+    <LinearLayout
+        android:id="@+id/ll_head_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp153"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_memory_size_desc"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp9"
+            android:layout_marginTop="@dimen/dp9"
+            android:gravity="center"
+            android:text="asdfa"
+            android:textColor="#fff"
+            android:textSize="@dimen/dp15"/>
+        <!--android:text="@string/tv_junk_desc"-->
+        <Button
+            android:id="@+id/pb_ram_prompt"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginBottom="@dimen/dp23"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp3"
+            android:paddingLeft="@dimen/dp61"
+            android:paddingRight="@dimen/dp61"
+            android:text="adfqwergqe"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp17"
+            />
+    </LinearLayout>
+
+</LinearLayout>
