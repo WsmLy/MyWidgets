@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ClickUtilsActivity">
+
+    <TextView
+        android:id="@+id/fast_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="72dp"
+        android:padding="16dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="快速点击"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/double_click_to_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="72dp"
+        android:padding="16dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="双击退出"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/double_click_to_exit_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="72dp"
+        android:padding="16dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="双击退出并弹出信息"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
