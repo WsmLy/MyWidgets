@@ -7,6 +7,7 @@ import android.view.View;
 
 import teotw.com.mywidgets.activities.ArcProgressActivity;
 import teotw.com.mywidgets.activities.CreateViewInSubThreadActivity;
+import teotw.com.mywidgets.activities.ShineButtonActivity;
 import teotw.com.mywidgets.activities.StickyActivity;
 import teotw.com.mywidgets.activities.UpDownTextViewActivity;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.create_view_insubthread).setOnClickListener(this);//在子线程创建view
         findViewById(R.id.arc_progress).setOnClickListener(this);//表盘进度条
         findViewById(R.id.sticky).setOnClickListener(this);//sticky
+        findViewById(R.id.shine_button).setOnClickListener(this);//shine_button
     }
 
     @Override
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.sticky://sticky
                 startActivity(new Intent(MainActivity.this, StickyActivity.class));
+                break;
+            case R.id.shine_button://shine_button
+                startActivity(new Intent(MainActivity.this, ShineButtonActivity.class));
                 break;
         }
     }

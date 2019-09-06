@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.TextView;
 
-import com.wzwetland.R;
+import teotw.com.mywidgets.R;
 
 /**
  * 带下划线的TextView

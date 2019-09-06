@@ -50,6 +50,13 @@
         <attr name="src" format="integer" />
     </declare-styleable>
 
+    <!--下划线-->
+    <declare-styleable name="UnderlineTextView">
+        <attr name="underline_color" format="color"/>
+        <attr name="underline_height" format="dimension"/>
+        <attr name="underline_width" format="dimension"/>
+    </declare-styleable>
+
     <!--点赞动画-->
     <declare-styleable name="PorterImageView">
         <attr name="siShape" format="integer|reference" />
@@ -68,5 +75,18 @@
         <attr name="click_animation_duration" format="integer" />
         <attr name="shine_distance_multiple" format="float" />
         <attr name="shine_size" format="dimension" />
+    </declare-styleable>
+
+    <!--星球view-->
+    <declare-styleable name="TagCloudView">
+        <attr name="autoScrollMode">
+            <enum name="disable" value="0" />
+            <enum name="decelerate" value="1" />
+            <enum name="uniform" value="2" />
+        </attr>
+        <attr name="radiusPercent" format="float" />
+        <attr name="scrollSpeed" format="float" />
+        <attr name="lightColor" format="color" />
+        <attr name="darkColor" format="color" />
     </declare-styleable>
 </resources>
