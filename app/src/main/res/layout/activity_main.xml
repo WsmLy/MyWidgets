@@ -62,4 +62,15 @@
         android:paddingStart="10dp"
         android:gravity="center_vertical"/>
 
+    <TextView
+        android:id="@+id/tag_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/tag_cloud"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginBottom="1dp"
+        android:paddingStart="10dp"
+        android:gravity="center_vertical"/>
+
 </LinearLayout>

@@ -9,6 +9,7 @@ import teotw.com.mywidgets.activities.ArcProgressActivity;
 import teotw.com.mywidgets.activities.CreateViewInSubThreadActivity;
 import teotw.com.mywidgets.activities.ShineButtonActivity;
 import teotw.com.mywidgets.activities.StickyActivity;
+import teotw.com.mywidgets.activities.TagActivity;
 import teotw.com.mywidgets.activities.UpDownTextViewActivity;
 
 /**
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.arc_progress).setOnClickListener(this);//表盘进度条
         findViewById(R.id.sticky).setOnClickListener(this);//sticky
         findViewById(R.id.shine_button).setOnClickListener(this);//shine_button
+        findViewById(R.id.tag_cloud).setOnClickListener(this);//tag_cloud
     }
 
     @Override
@@ -46,6 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.shine_button://shine_button
                 startActivity(new Intent(MainActivity.this, ShineButtonActivity.class));
+                break;
+            case R.id.tag_cloud://tag_cloud
+                startActivity(new Intent(MainActivity.this, TagActivity.class));
                 break;
         }
     }
