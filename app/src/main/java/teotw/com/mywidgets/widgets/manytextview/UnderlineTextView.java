@@ -1,4 +1,4 @@
-package teotw.com.mywidgets.widgets;
+package teotw.com.mywidgets.widgets.manytextview;
 
 import android.content.Context;
 import android.content.res.TypedArray;

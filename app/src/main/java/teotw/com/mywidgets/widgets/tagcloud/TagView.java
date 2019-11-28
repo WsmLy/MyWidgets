@@ -1,4 +1,4 @@
-package teotw.com.mywidgets.widgets;
+package teotw.com.mywidgets.widgets.tagcloud;
 
 import android.content.Context;
 import android.view.View;

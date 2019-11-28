@@ -1,5 +1,6 @@
 package com.example.myutils.utils;
 
+import android.content.Context;
 import android.util.DisplayMetrics;
 
 import com.example.myutils.beans.ScreenInfo;
@@ -96,6 +97,10 @@ public class DisplayUtil {
      */
     public static DisplayMetrics getDisplayMetrics() {
         return ContextUtils.getContext().getResources().getDisplayMetrics();
+    }
+
+    public static DisplayMetrics getDisplayMetrics(Context context) {
+        return context.getResources().getDisplayMetrics();
     }
 
     /**

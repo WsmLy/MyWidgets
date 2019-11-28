@@ -57,6 +57,19 @@
         <attr name="underline_width" format="dimension"/>
     </declare-styleable>
 
+    <!--拼接的TextView-->
+    <declare-styleable name="MiddlePointTextView">
+        <attr name="text_start" format="string"/>
+        <attr name="text_middle" format="string"/>
+        <attr name="text_end" format="string"/>
+        <attr name="text_start_size" format="dimension"/>
+        <attr name="text_middle_size" format="dimension"/>
+        <attr name="text_end_size" format="dimension"/>
+        <attr name="text_start_color" format="color"/>
+        <attr name="text_middle_color" format="color"/>
+        <attr name="text_end_color" format="color"/>
+    </declare-styleable>
+
     <!--点赞动画-->
     <declare-styleable name="PorterImageView">
         <attr name="siShape" format="integer|reference" />

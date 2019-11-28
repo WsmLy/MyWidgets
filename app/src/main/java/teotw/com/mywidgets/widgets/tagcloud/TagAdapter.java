@@ -1,4 +1,4 @@
-package teotw.com.mywidgets.widgets;
+package teotw.com.mywidgets.widgets.tagcloud;
 
 import android.util.Log;
 import android.view.View;
@@ -8,6 +8,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import teotw.com.mywidgets.widgets.FlowLayout;
 
 public abstract class TagAdapter<T> {
     private List<T> mTagDatas;

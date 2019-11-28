@@ -1,4 +1,4 @@
-package teotw.com.mywidgets.widgets;
+package teotw.com.mywidgets.widgets.tagcloud;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,6 +13,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import teotw.com.mywidgets.R;
+import teotw.com.mywidgets.widgets.FlowLayout;
 
 public class TagFlowLayout extends FlowLayout implements TagAdapter.OnDataChangedListener {
 

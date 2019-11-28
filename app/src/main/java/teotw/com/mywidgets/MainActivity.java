@@ -10,7 +10,7 @@ import teotw.com.mywidgets.activities.CreateViewInSubThreadActivity;
 import teotw.com.mywidgets.activities.ShineButtonActivity;
 import teotw.com.mywidgets.activities.StickyActivity;
 import teotw.com.mywidgets.activities.TagActivity;
-import teotw.com.mywidgets.activities.UpDownTextViewActivity;
+import teotw.com.mywidgets.activities.TextViewActivity;
 
 /**
  * create by sam in 2019/4/30  由刘毅创建于2019年4月30日
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.up_down_textview://自动向上滚动的控件
-                startActivity(new Intent(MainActivity.this, UpDownTextViewActivity.class));
+                startActivity(new Intent(MainActivity.this, TextViewActivity.class));
                 break;
             case R.id.create_view_insubthread://子线程创建view
                 startActivity(new Intent(MainActivity.this, CreateViewInSubThreadActivity.class));

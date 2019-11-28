@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:orientation="vertical" >
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
     <!--must set its father layout`s height for avoide showing problem-->
     <!--必须设置父布局的高度，不然会显示出问题-->
-    <teotw.com.mywidgets.widgets.UpDownTextView
+    <teotw.com.mywidgets.widgets.manytextview.UpDownTextView
         android:id="@+id/updown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,5 +15,25 @@
         android:layout_gravity="center_vertical"
         android:padding="10dp"
         android:textSize="14sp"/>
+
+    <teotw.com.mywidgets.widgets.manytextview.ComponTextLayout
+        android:id="@+id/compose_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal" />
+
+    <teotw.com.mywidgets.widgets.manytextview.MiddlePointTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text_start="ceshiceshiceshiceshiceshiceshiceshiceshiceshiceshiceshiceshiceshiceshi"
+        app:text_middle="middle"
+        app:text_end="endendend"/>
+
+
+    <teotw.com.mywidgets.widgets.manytextview.ExpandableTextView
+        android:id="@+id/expanded_text"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
