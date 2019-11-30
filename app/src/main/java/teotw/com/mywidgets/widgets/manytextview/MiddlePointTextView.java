@@ -82,15 +82,19 @@ public class MiddlePointTextView extends android.support.v7.widget.AppCompatText
             canvas.drawText(endString, startWidth + middleWidth, 50, paintEnd);
         } else {
             StringBuffer paintStartFinal = new StringBuffer();
-            float startMaxWidth = paintStart.measureText("...");
-            for (int i = 0; i < startString.length(); i ++) {
-                if (startMaxWidth < screenWidth - endWidth - middleWidth - paintStart.measureText(String.valueOf(startString.charAt(i)))) {
-                    startMaxWidth += paintStart.measureText(String.valueOf(startString.charAt(i)));
-                    paintStartFinal.append(startString.charAt(i));
-                } else {
-                    break;
-                }
-            }
+
+//            float startMaxWidth = paintStart.measureText("...");
+//            for (int i = 0; i < startString.length(); i ++) {
+//                if (startMaxWidth < screenWidth - endWidth - middleWidth - paintStart.measureText(String.valueOf(startString.charAt(i)))) {
+//                    startMaxWidth += paintStart.measureText(String.valueOf(startString.charAt(i)));
+//                    paintStartFinal.append(startString.charAt(i));
+//                } else {
+//                    break;
+//                }
+//            }
+            int finalLength = paintStart.breakText(startString, true, screenWidth - endWidth - middleWidth - paintStart.measureText("..."), null);
+            paintStartFinal.append(startString.substring(0, finalLength));
+
             paintStartFinal.append("...");
             canvas.drawText(endString, screenWidth - endWidth, 50, paintEnd);
             canvas.drawText(middleString, screenWidth - endWidth - middleWidth, 50, paintMiddle);
