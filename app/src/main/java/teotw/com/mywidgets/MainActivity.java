@@ -52,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tag_cloud://tag_cloud
                 startActivity(new Intent(MainActivity.this, TagActivity.class));
                 break;
+            case R.id.tag_cloud://tag_cloud
+                startActivity(new Intent(MainActivity.this, ImageVideoActivity.class));
+                break;
         }
     }
 }
