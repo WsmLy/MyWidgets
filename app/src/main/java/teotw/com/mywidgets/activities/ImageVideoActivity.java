@@ -12,6 +12,7 @@ import java.util.TimerTask;
 
 //import butterknife.BindView;
 //import butterknife.ButterKnife;
+import teotw.com.mywidgets.R;
 import teotw.com.mywidgets.widgets.imagevideobanner.BannerModel;
 import teotw.com.mywidgets.widgets.imagevideobanner.BannerViewAdapter;
 import teotw.com.mywidgets.widgets.imagevideobanner.NoPreLoadViewPager;
@@ -46,7 +47,7 @@ public class ImageVideoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_imagevideobanner);
         mNoPreLoadViewPager = findViewById(R.id.ic_viewpager);
 //        ButterKnife.bind(this);
         initData();
