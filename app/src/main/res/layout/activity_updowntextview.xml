@@ -16,12 +16,6 @@
         android:padding="10dp"
         android:textSize="14sp"/>
 
-    <teotw.com.mywidgets.widgets.manytextview.ComponTextLayout
-        android:id="@+id/compose_text"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal" />
-
     <teotw.com.mywidgets.widgets.manytextview.MiddlePointTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

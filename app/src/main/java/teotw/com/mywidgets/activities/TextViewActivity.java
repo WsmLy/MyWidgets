@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import teotw.com.mywidgets.R;
-import teotw.com.mywidgets.widgets.manytextview.ComponTextLayout;
 import teotw.com.mywidgets.widgets.manytextview.ExpandableTextView;
 import teotw.com.mywidgets.widgets.manytextview.UpDownTextView;
 
@@ -67,9 +66,6 @@ public class TextViewActivity extends AppCompatActivity {
             }
         });
         handler.sendEmptyMessage(1);
-
-        ComponTextLayout componTextLayout = findViewById(R.id.compose_text);
-        componTextLayout.setText("kjdhfasljklgjkladrjfjkladsjflkadsjglgkljadfjskgkljdkla", "sjaafijaklsjf", "sdjffijas");
 
         ExpandableTextView expandableTextView = findViewById(R.id.expanded_text);
         int viewWidth = getResources().getDisplayMetrics().widthPixels - dp2px(this, 20f);
