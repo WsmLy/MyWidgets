@@ -11,14 +11,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp390"
+        android:layout_height="390dp"
         android:gravity="center"
         android:paddingBottom="12dp"
         android:background="#ff0000ff">
     <teotw.com.mywidgets.widgets.ArcProgressCircle
         android:id="@+id/apc_aqi"
-        android:layout_width="@dimen/dp300"
-        android:layout_height="@dimen/dp250"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
         android:progress="0"
         android:background="@color/colorAccent"
         android:visibility="invisible"
