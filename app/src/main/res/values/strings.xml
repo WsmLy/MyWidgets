@@ -6,4 +6,5 @@
     <string name="shine_button">我是shine_button</string>
     <string name="tag_cloud">我是tag_cloud</string>
     <string name="image_video_banner">我是image_video_banner</string>
+    <string name="double_recyclerview">我是double_recyclerview</string>
 </resources>

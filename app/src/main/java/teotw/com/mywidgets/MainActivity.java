@@ -7,6 +7,7 @@ import android.view.View;
 
 import teotw.com.mywidgets.activities.ArcProgressActivity;
 import teotw.com.mywidgets.activities.CreateViewInSubThreadActivity;
+import teotw.com.mywidgets.activities.DoubleRecyclerActivity;
 import teotw.com.mywidgets.activities.ImageVideoActivity;
 import teotw.com.mywidgets.activities.ShineButtonActivity;
 import teotw.com.mywidgets.activities.StickyActivity;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.shine_button).setOnClickListener(this);//shine_button
         findViewById(R.id.tag_cloud).setOnClickListener(this);//tag_cloud
         findViewById(R.id.image_video_banner).setOnClickListener(this);//image_video_banner
+        findViewById(R.id.double_recyclerview).setOnClickListener(this);//double_recyclerview
     }
 
     @Override
@@ -56,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.image_video_banner://image_video_banner
                 startActivity(new Intent(MainActivity.this, ImageVideoActivity.class));
+                break;
+            case R.id.double_recyclerview://image_video_banner
+                startActivity(new Intent(MainActivity.this, DoubleRecyclerActivity.class));
                 break;
         }
     }

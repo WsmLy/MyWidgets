@@ -84,4 +84,15 @@
         android:paddingStart="10dp"
         android:gravity="center_vertical"/>
 
+    <TextView
+        android:id="@+id/double_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/double_recyclerview"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginBottom="1dp"
+        android:paddingStart="10dp"
+        android:gravity="center_vertical"/>
+
 </LinearLayout>

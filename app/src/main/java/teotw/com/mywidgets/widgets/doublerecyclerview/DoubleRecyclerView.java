@@ -58,7 +58,6 @@ public class DoubleRecyclerView extends LinearLayout {
 
         titleView.setLayoutManager(new LinearLayoutManager(context, titleOritation, false));
 
-
         itemView.setLayoutManager(new LinearLayoutManager(context, itemOritation, false));
     }
 

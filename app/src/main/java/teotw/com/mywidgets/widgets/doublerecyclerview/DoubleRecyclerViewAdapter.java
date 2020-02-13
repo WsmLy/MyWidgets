@@ -11,12 +11,10 @@ import android.view.ViewGroup;
  * updateDetail :
  */
 public abstract class DoubleRecyclerViewAdapter<T extends RecyclerView.ViewHolder, K extends RecyclerView.ViewHolder> {
-    private Context context;
     private RecyclerView.Adapter titleAdapter;
     private RecyclerView.Adapter itemAdapter;
 
-    public DoubleRecyclerViewAdapter(Context context) {
-        this.context = context;
+    public DoubleRecyclerViewAdapter() {
         setTitleAdapter();
         setItemAdapter();
     }
