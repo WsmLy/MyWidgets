@@ -7,6 +7,7 @@ import android.view.View;
 
 import teotw.com.mywidgets.activities.ArcProgressActivity;
 import teotw.com.mywidgets.activities.CreateViewInSubThreadActivity;
+import teotw.com.mywidgets.activities.ImageVideoActivity;
 import teotw.com.mywidgets.activities.ShineButtonActivity;
 import teotw.com.mywidgets.activities.StickyActivity;
 import teotw.com.mywidgets.activities.TagActivity;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.sticky).setOnClickListener(this);//sticky
         findViewById(R.id.shine_button).setOnClickListener(this);//shine_button
         findViewById(R.id.tag_cloud).setOnClickListener(this);//tag_cloud
+        findViewById(R.id.image_video_banner).setOnClickListener(this);//image_video_banner
     }
 
     @Override
@@ -51,6 +53,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tag_cloud://tag_cloud
                 startActivity(new Intent(MainActivity.this, TagActivity.class));
+                break;
+            case R.id.image_video_banner://image_video_banner
+                startActivity(new Intent(MainActivity.this, ImageVideoActivity.class));
                 break;
         }
     }
