@@ -8,8 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.myutils.utils.DisplayUtil;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -74,7 +72,7 @@ public class TextViewActivity extends AppCompatActivity {
         componTextLayout.setText("kjdhfasljklgjkladrjfjkladsjflkadsjglgkljadfjskgkljdkla", "sjaafijaklsjf", "sdjffijas");
 
         ExpandableTextView expandableTextView = findViewById(R.id.expanded_text);
-        int viewWidth = DisplayUtil.getDisplayMetrics(this).widthPixels - dp2px(this, 20f);
+        int viewWidth = getResources().getDisplayMetrics().widthPixels - dp2px(this, 20f);
         expandableTextView.initWidth(viewWidth);
         expandableTextView.setMaxLines(3);
         expandableTextView.setHasAnimation(true);

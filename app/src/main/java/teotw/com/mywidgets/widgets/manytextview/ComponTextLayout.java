@@ -11,8 +11,6 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.myutils.utils.DisplayUtil;
-
 /**
  * created by samwsm at 2019-11-27 21:52
  * update by samwsm at 2019-11-27 21:52
@@ -59,7 +57,7 @@ public class ComponTextLayout extends LinearLayout {
         startText.setText(start);
         Paint p = endText.getPaint();
         Paint p1 = middleText.getPaint();
-        LayoutParams layoutParams = new LayoutParams((int)(DisplayUtil.getDisplayMetrics(context).widthPixels
+        LayoutParams layoutParams = new LayoutParams((int)(getResources().getDisplayMetrics().widthPixels
                 - this.getPaddingLeft() - this.getPaddingRight()
                 - p.measureText(end) - p1.measureText(middle)), ViewGroup.LayoutParams.MATCH_PARENT);
         startText.setLayoutParams(layoutParams);

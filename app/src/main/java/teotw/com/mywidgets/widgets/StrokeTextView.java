@@ -6,8 +6,6 @@ import android.graphics.Paint;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 
-import com.example.myutils.utils.DisplayUtil;
-
 import teotw.com.mywidgets.R;
 
 /**
@@ -45,7 +43,7 @@ public class StrokeTextView extends android.support.v7.widget.AppCompatTextView 
         // 自定义描边效果
         strokePaint.setStyle(Paint.Style.STROKE);
         strokePaint.setColor(getResources().getColor(R.color.white));
-        strokePaint.setStrokeWidth(DisplayUtil.dp2px(1f));
+        strokePaint.setStrokeWidth(3);
 
         String text = getText().toString();
         //在文本底层画出带描边的文本
