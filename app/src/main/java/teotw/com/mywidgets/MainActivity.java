@@ -8,11 +8,13 @@ import android.view.View;
 import teotw.com.mywidgets.activities.ArcProgressActivity;
 import teotw.com.mywidgets.activities.CreateViewInSubThreadActivity;
 import teotw.com.mywidgets.activities.DoubleRecyclerActivity;
+import teotw.com.mywidgets.activities.FlowLayoutActivity;
 import teotw.com.mywidgets.activities.ImageVideoActivity;
 import teotw.com.mywidgets.activities.ShineButtonActivity;
 import teotw.com.mywidgets.activities.StickyActivity;
 import teotw.com.mywidgets.activities.TagActivity;
 import teotw.com.mywidgets.activities.TextViewActivity;
+import teotw.com.mywidgets.widgets.flowlayout.FlowLayout;
 
 /**
  * create by sam in 2019/4/30  由刘毅创建于2019年4月30日
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tag_cloud).setOnClickListener(this);//tag_cloud
         findViewById(R.id.image_video_banner).setOnClickListener(this);//image_video_banner
         findViewById(R.id.double_recyclerview).setOnClickListener(this);//double_recyclerview
+        findViewById(R.id.flow_layout).setOnClickListener(this);//flow_layout
     }
 
     @Override
@@ -61,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.double_recyclerview://image_video_banner
                 startActivity(new Intent(MainActivity.this, DoubleRecyclerActivity.class));
+                break;
+            case R.id.flow_layout://flow_layout
+                startActivity(new Intent(MainActivity.this, FlowLayoutActivity.class));
                 break;
         }
     }

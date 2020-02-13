@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import teotw.com.mywidgets.widgets.FlowLayout;
+import teotw.com.mywidgets.widgets.flowlayout.FlowLayout;
 
 public abstract class TagAdapter<T> {
     private List<T> mTagDatas;

@@ -1,4 +1,4 @@
-package teotw.com.mywidgets.widgets;
+package teotw.com.mywidgets.widgets.flowlayout;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import teotw.com.mywidgets.R;
-import teotw.com.mywidgets.widgets.FlowLayout;
+import teotw.com.mywidgets.widgets.flowlayout.FlowLayout;
 
 public class TagFlowLayout extends FlowLayout implements TagAdapter.OnDataChangedListener {
 
